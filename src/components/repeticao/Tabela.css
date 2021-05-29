@@ -1,0 +1,14 @@
+.Tabela th{
+background-color:#FFF;
+color:rgb(197, 131, 245);
+}
+.Tabela table{
+    width: 100%;
+    height: auto;
+}
+.Tabela .Par{
+    background-color: rgb(161, 141, 110);
+}
+.Tabela .Impar{
+    background-color: rgb(194, 193, 193);
+}

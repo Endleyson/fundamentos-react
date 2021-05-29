@@ -1,0 +1,32 @@
+.Card {
+    color: purple;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0.3em;
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    min-width: 20%;
+    max-width: 20%;
+    
+
+}
+.Content{
+    background-color: purple;
+    color: greenyellow;
+    padding: 3%;
+    flex:1;   
+    
+
+}
+.Title{
+   padding: 1%;
+   display: flex;
+   justify-content: center;
+   font-size: larger;
+   font-weight: 800;
+
+}
+ul{
+    list-style: none;
+    }
