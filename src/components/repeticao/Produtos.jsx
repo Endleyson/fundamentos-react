@@ -6,7 +6,8 @@ export default props =>{
     const trs = produtos.map((produtos, i)=>{
         return(
             <tr className = {i % 2===0 ? 'Par ' : ' Impar '} key={produtos.id}>
-                 <td>{produtos.produto}  </td>
+                 <td>{produtos.id}  </td>
+                <td>{produtos.produto}  </td>
                 <td> R$ {produtos.preco.toFixed(2).replace('.',',')}</td>
                 </tr>
         )
@@ -16,6 +17,7 @@ export default props =>{
             <table className='Tabela'>
                 <thead>
               <tr>
+                  <th>ID</th>
                   <th>PRODUTO</th>
                   <th>PPREÇO</th>
               </tr>

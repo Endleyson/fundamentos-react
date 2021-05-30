@@ -10,15 +10,42 @@ import FamiliaMembro from './components/basicos//FamiliaMembro'
 import ListaAluno from './components/repeticao/ListaAluno'
 import Produtos from './components/repeticao/Produtos'
 import ParOuImpar from './components/condicional/ParOuImpar'
+import Usuario from './components/condicional/usuarioInfo'
+import DiretaPai from'./components/Direta/DiretaPai'
+import IndiretaPai from'./components/Indireta/IndiretaPai'
+import Input from'./components/Formulario/Input'
+import Contador from'./components/Contador/Contador'
+import Contador2 from'./components/Contador/Contador2'
 export default () => {
     return (
         <div className="App">
             <h1>Fundamentos React 3</h1>
 
-            <div className="Cards">
+        <div className="Cards">
+
+        <Card titulo="#13 Contador Fracionado" color="#99f">
+                <Contador2 numeroInicial={0}></Contador2>
+                </Card>
+
+        <Card titulo="#12 Contador" color="#19f">
+                <Contador numeroInicial={0}></Contador>
+                </Card>
+
+            <Card titulo="#11 Componente Controlado" color="#5a1">
+                <Input></Input>
+                </Card>
+            <Card titulo="#10 Comunicação Indireta" color="#5af">
+                <IndiretaPai/>
+                </Card>
+
+            <Card titulo="#9 Comunicação Direta" color="#faf">
+                <DiretaPai/>
+                </Card>
                 
-            <Card titulo="#8 Renderização Par ou Impar" color="#fff">
-                <ParOuImpar>numero{21}</ParOuImpar>                    
+            <Card titulo="#8 Renderização por Condicional" color="#ffd">
+                <ParOuImpar>numero{21}</ParOuImpar>
+                <Usuario usuario = {{nome: 'Duarte'}}/>
+                <Usuario/>                
                 </Card>
 
            
