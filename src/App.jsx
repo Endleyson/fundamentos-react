@@ -16,12 +16,17 @@ import IndiretaPai from'./components/Indireta/IndiretaPai'
 import Input from'./components/Formulario/Input'
 import Contador from'./components/Contador/Contador'
 import Contador2 from'./components/Contador/Contador2'
+import Mega from'./components/Mega/Mega'
+
 export default () => {
     return (
         <div className="App">
             <h1>Fundamentos React 3</h1>
 
         <div className="Cards">
+        <Card titulo="#14 Gerador Mega" color="#991">
+                <Mega></Mega>
+                </Card>
 
         <Card titulo="#13 Contador Fracionado" color="#99f">
                 <Contador2 numeroInicial={0}></Contador2>
